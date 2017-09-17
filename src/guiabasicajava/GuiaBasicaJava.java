@@ -1,8 +1,5 @@
 
 package guiabasicajava;
-
-//import java.util.Scanner;
-
 import java.util.Scanner;
 
 
@@ -15,45 +12,28 @@ public class GuiaBasicaJava
     
     public static void main(String[] args) 
     {
-        //ej1();
-        //ej2();
-        //ej3();
-        //ej4();
-        //ej5();
-        //ej6();
-        //ej7();
-        //ej8();
-        //ej9();
-        //ej10();
-        //ej11();
-        //ej12();
-        //ej13();
-        ej14();
-//        int ejercicio = 0;
-//        Scanner teclado = new Scanner(System.in);
-//        System.out.print("Elija una opcion: ");
-//        ejercicio = teclado.next(); 
-//        switch(ejercicio)
-//        {
-//            case 1: ej1();
-//            case 2: ej2();
-//            case 3: ej3();
-//            case 4: ej4();
-//            case 5: ej5();
-//            case 6: ej6();
-//            case 7: ej7();
-//            case 8: ej8();
-//            case 9: ej9();
-//            case 10: ej10();
-//            case 11: ej11();
-//            case 12: ej12();
-//            case 13: ej13();
-//            case 14: ej14();
-//            case 15: ej15();
-//            case 16: ej16();
-//            case 17: ej17();
-//            case 18: ej18();  
-//        }
+        int ejercicio;
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Elija una opcion del 1 al 14: ");
+        ejercicio = teclado.nextInt(); 
+        switch(ejercicio)
+        {
+            case 1: ej1(); break;
+            case 2: ej2(); break;
+            case 3: ej3(); break;
+            case 4: ej4(); break;
+            case 5: ej5(); break;
+            case 6: ej6(); break;
+            case 7: ej7(); break;
+            case 8: ej8(); break;
+            case 9: ej9(); break;
+            case 10: ej10(); break;
+            case 11: ej11(); break;
+            case 12: ej12(); break;
+            case 13: ej13(); break;
+            case 14: ej14();  break;
+            default: System.out.print("Error!"); break;
+        }
   }
 
 //1) Tipos de datos – Visualización del contenido
@@ -67,7 +47,7 @@ public class GuiaBasicaJava
         int entero = 1;
         boolean boole = true;
         System.out.print("Texto: " + texto + "\nEntero: " + entero
-                            +"\nBoolean: " + boole);   
+                            +"\nBoolean: \n" + boole);   
     }
 
 //2) Escribir un programa que:
@@ -96,7 +76,8 @@ public class GuiaBasicaJava
         //exp1 = a / b; Error: tipos de datos incompatibles (entero y decimal)
         exp1 = (int) Math.round(a / b);
         exp2 = a / b;
-        System.out.print("a: "+a+"\nb: "+b+"\nexp1: "+exp1+"\nexp2: "+exp2);
+        System.out.print("a: "+a+"\nb: "+b+"\nexp1: "
+                        +exp1+"\nexp2: "+exp2+"\n");
     }
 
 //3) Instrucciones de asignación (entender los cambios en las posiciones
@@ -135,16 +116,19 @@ public class GuiaBasicaJava
         {
             if(num1 > num2)
             {
-                System.out.print("num1 ("+num1+") es mayor que num2 ("+num2+")");
+                System.out.print("num1 ("+num1+") es mayor que num2 ("
+                                +num2+")\n");
             }
             else 
             {
-                System.out.print("num2 ("+num2+") es mayor que num1 ("+num1+")");
+                System.out.print("num2 ("+num2+") es mayor que num1 ("
+                                +num1+")\n");
             }
         }
         else
         {
-            System.out.print("num1 ("+num1+") y num2 ("+num2+") son iguales.");
+            System.out.print("num1 ("+num1+") y num2 ("
+                            +num2+") son iguales.\n");
         }
     }
 
@@ -194,11 +178,11 @@ public class GuiaBasicaJava
         numero = teclado.nextInt();
         if((numero%2)==0)
         {
-            System.out.print("El número "+numero+" es divisible por 2");
+            System.out.print("El número "+numero+" es divisible por 2.\n");
         }
         else
         {
-            System.out.print("El número "+numero+" no es divisible por 2");
+            System.out.print("El número "+numero+" no es divisible por 2.\n");
         }
     }
     
