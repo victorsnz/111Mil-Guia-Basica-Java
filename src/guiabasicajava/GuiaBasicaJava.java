@@ -293,10 +293,6 @@ public class GuiaBasicaJava
         }
         System.out.print("\n");
     }
-    
-//  15) Realiza una aplicación que nos pida un número de ventas a introducir,
-//      después nos pedirá tantas ventas por teclado como número de ventas se
-//      hayan indicado. Al final mostrara la suma de todas las ventas.
-    
+      
 }
 
